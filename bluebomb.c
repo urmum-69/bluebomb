@@ -444,7 +444,7 @@ int main(int argc, char *argv[]) {
 	struct sockaddr_l2 addr;
 	socklen_t len = sizeof(addr);
 	
-	printf("Waiting to accept\n");
+	printf("Waiting to accept\nGo spam sync\n");
 	con = accept(l2cap_sock, (struct sockaddr *) &addr, &len);
 	if (con < 0) {
 		printf("Error accepting connection: %s\n", strerror(errno));
